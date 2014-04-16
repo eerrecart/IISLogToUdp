@@ -4,7 +4,7 @@
 #include <httpserv.h>
 
 // Create the module's global class.
-class MyGlobalModule : public CGlobalModule
+class IISLogToUdp : public CGlobalModule
 {
 public:
 
@@ -25,13 +25,13 @@ public:
         delete this;
     }
 
-    MyGlobalModule()
+    IISLogToUdp()
     {
         // Open a handle to the Event Viewer.
         m_hEventLog = RegisterEventSource( NULL,"FOOBAR" );
     }
 
-    ~MyGlobalModule()
+    ~IISLogToUdp()
     {
         // Test whether the handle for the Event Viewer is open.
         if (NULL != m_hEventLog)
