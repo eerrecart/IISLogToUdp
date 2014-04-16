@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IIsLogToUdp", "IIsLogToUdp.vcxproj", "{8C55C358-6C34-452E-BE94-E7A1320C8B6A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IISLogToUdp", "IISLogToUdp.vcxproj", "{8C55C358-6C34-452E-BE94-E7A1320C8B6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
