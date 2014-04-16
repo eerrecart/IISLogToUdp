@@ -3,7 +3,7 @@ IIsLogToUdp
 
 IIS Native module, to push log data through UDP
 
-Things to check on installing
+Things to check on install
 --
 
 * Verify if you are ruuning on Win-32 or Win-64.
