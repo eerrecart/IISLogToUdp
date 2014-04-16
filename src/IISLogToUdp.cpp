@@ -15,7 +15,7 @@ public:
     )
     {
         UNREFERENCED_PARAMETER( pProvider );
-        WriteEventViewerLog( "I say... what what..." );
+        WriteEventViewerLog( "TEST" );
         return GL_NOTIFICATION_CONTINUE;
     }
 
@@ -28,7 +28,7 @@ public:
     MyGlobalModule()
     {
         // Open a handle to the Event Viewer.
-        m_hEventLog = RegisterEventSource( NULL,"What what in my butt" );
+        m_hEventLog = RegisterEventSource( NULL,"FOOBAR" );
     }
 
     ~MyGlobalModule()
