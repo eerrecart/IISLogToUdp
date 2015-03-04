@@ -76,13 +76,13 @@ RegisterModule(
     UNREFERENCED_PARAMETER( pGlobalInfo );
 
     // Create an instance of the global module class.
-    MyGlobalModule * pGlobalModule = new MyGlobalModule;
+	IISLogToUdp * pIISLogToUdp = new IISLogToUdp;
     // Test for an error.
-    if (NULL == pGlobalModule)
+	if (NULL == pIISLogToUdp)
     {
         return HRESULT_FROM_WIN32(ERROR_NOT_ENOUGH_MEMORY);
     }
     // Set the global notifications and exit.
     return pModuleInfo->SetGlobalNotifications(
-        pGlobalModule, GL_PRE_BEGIN_REQUEST );
+		pIISLogToUdp, GL_PRE_BEGIN_REQUEST);
 }
