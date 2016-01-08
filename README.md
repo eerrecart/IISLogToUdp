@@ -1,6 +1,8 @@
 IIsLogToUdp
 ===========
 
+**Incomplete almost dead project**
+
 IIS Native module, to push log data through UDP
 
 Things to check on install
